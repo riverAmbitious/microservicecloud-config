@@ -13,7 +13,8 @@ spring:
 eureka:
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称
-    nonSecurePort: ${server.port}
+    instance-id: eureka7001.com   #自定义服务名称信息
+    prefer-ip-address: true     #访问路径可以显示IP地址
   client:
     register-with-eureka: false     #false表示不向注册中心注册自己。
     fetch-registry: false     #不通过eureka获取注册信息
@@ -30,7 +31,8 @@ spring:
 eureka:
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称
-    nonSecurePort: ${server.port}
+    instance-id: eureka7001.com   #自定义服务名称信息
+    prefer-ip-address: true     #访问路径可以显示IP地址
   client:
     register-with-eureka: false     #false表示不向注册中心注册自己。
     fetch-registry: false     #不通过eureka获取注册信息
