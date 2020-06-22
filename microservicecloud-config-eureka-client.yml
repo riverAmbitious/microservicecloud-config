@@ -13,6 +13,7 @@ spring:
 eureka:
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称
+    nonSecurePort: ${server.port}
   client:
     register-with-eureka: false     #false表示不向注册中心注册自己。
     fetch-registry: false     #不通过eureka获取注册信息
@@ -29,6 +30,7 @@ spring:
 eureka:
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称
+    nonSecurePort: ${server.port}
   client:
     register-with-eureka: false     #false表示不向注册中心注册自己。
     fetch-registry: false     #不通过eureka获取注册信息
